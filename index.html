@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Resume Builder</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Include html2pdf.js library from CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+
+</head>
+<body>
+  <div class="container">
+    <h1>Resume Builder</h1>
+    <!-- Form Section -->
+    <div class="form-section">
+      <label>Full Name:</label><br/>
+      <input type="text" id="fullName" /><br />
+
+      <label>Father's Name:</label><br/>
+      <input type="text" id="fname" /><br />
+
+      <label>National ID Card Number:</label><br/>
+      <input type="text" id="cnic" /><br />
+
+      <label>Email:</label><br />
+      <input type="email" id="email" /><br />
+
+      <label>Phone: </label><br />
+      <input type="tel" id="phone" /><br />
+
+      <label>Residential Address:</label><br/>
+      <input type="text" id="address" /><br />
+
+      <label>Profile Picture:</label><br />
+      <input type="file" id="profilePicture" accept="image/*" /><br />
+
+      <label>Educatiom:</label><br />
+      <textarea id="education"></textarea><br />
+
+      <label>Experience:</label><br />
+      <textarea id="experience"></textarea><br />
+
+      <label>Skills:</label><br />
+      <textarea id="skills"></textarea><br />
+
+      <label>Interest:</label><br />
+      <textarea id="Interest"></textarea><br />
+
+      <button id="generateResume">Generate Resume</button>
+      <button id="downloadPDF">Download PDF</button>
+    </div>
+
+    <!-- Preview Section -->
+    <div class="preview-section" id="previewSection" style="display:none">
+      <h2>Resume Preview below</h2>
+      <div class="resume-preview" id="resumePreview">
+        <h1 style="text-align: center; padding-top: 40px; font-weight: bold;">Resume</h1>
+        <div id="previewProfilePic"></div>
+        <h3>Full Name:</h3>
+        <h3 id="previewFullName"></h3>
+        <h4>Father,s Name:</h4>
+        <p id="previewFname"></p>
+        <h4>National ID Card Number:</h4>
+        <p id="Cnic"></p>
+        <h4>Email:</h4>
+        <p id="previewEmail"></p>
+        <h4>Contact Number:</h4>
+        <p id="previewPhone"></p>
+        <h4>Residential Address:</h4>
+        <p id="previewAddress"></p>
+        <h4>Education:</h4>
+        <p id="previeweducation"></p>
+        <h4>Experience:</h4>
+        <p id="previewExperience"></p>
+        <h4>Skills:</h4>
+        <p id="previewSkills"></p>
+        <h4>Interest:</h4>
+        <p id="previewInterest"></p>
+      </div>
+      <!-- Shareable URL Section -->
+      <div>
+        <label>Shareable URL:</label>
+        <input type="text" id="shareableURL" readonly />
+        <button id="copyURLButton">Copy URL</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Link to TypeScript code compiled as JavaScript -->
+  <script src="main.js"></script>
+</body>
+</html>

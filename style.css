@@ -1,0 +1,99 @@
+body {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f9;
+}
+
+.container {
+  width: 60%;
+  max-width: 600px;
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+#form-section, #preview-section {
+  margin-top: 10px;
+}
+fieldset {
+  border-radius: 10px;
+  padding-bottom: 20px;
+  margin-top: 10px;
+}
+
+label {
+  display: block;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: rgb(207, 159, 241);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: rgb(152, 61, 216);
+}
+
+#preview-section  {
+  text-align: center;
+}
+
+#resume-preview {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+#previewProfilePic {
+  padding-left: 40px;
+  width: 100px;
+  
+  border-radius: 4px solid indigo;
+  
+}
+
+.previewFullName {
+  text-align: center;
+}
+h3 {
+  padding-left: 40px;
+  color: indigo;
+}
+
+h4 {
+  padding-left: 40px;
+  color: indigo;
+}
+p {
+  padding-left: 40px;
+  color:darkcyan;
+  
+}
